@@ -1,0 +1,26 @@
+:root {
+  /* --color-fondo: #0C1050; */
+  --color-primario: #06092b;
+  --color-secundario: #64D7EA;
+  --color-fuente: #FAFAFA;
+}
+
+body {
+  background-color: var(--color-primario);
+}
+
+.bg-contraste {
+  background-color: var(--color-secundario);
+}
+
+.text-oscuro {
+  color: var(--color-primario);
+}
+
+.navbar {
+  color: var(--color-primario);
+}
+
+h1 {
+  color: var(--color-fuente);
+}
