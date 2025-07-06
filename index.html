@@ -3,47 +3,70 @@
 	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/cybersecurity-padlock.png" type="image/x-icon">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/style.css">
     <title>Ciberseguridad</title>
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navbar navbar-expand-lg bg-contraste" data-bs-theme="light">
-				<div class="container ms-auto">
-					<a class="navbar-brand" href="#">Navbar</a>
+			<nav class="navbar navbar-expand-lg bg-contraste">
+				<div class="container px-5">
+					<a class="navbar-brand" href="index.html"><img src="assets/img/cybersecurity-padlock.png" alt="imagen de candado"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link" href="amenazas.html">Amenazas Comunes</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled">Disabled</a>
+								<a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<div class="hero-section">
-
+			<div class="hero-section container text-center">
+				<h1 class="titulo-principal m-5">Ciberseguridad</h1> 
+				<img class="robot-ciberseguridad" src="assets/img/cybersecurity-robot.png" alt="robot sosteniendo un candado en su mano">
 			</div>
 		</header>
-		<main class="main">
-			<div class="container text-center">
-				<h1 class="m-5">Ciberseguridad</h1> 
+		<main class="main container pb-4">
+			<div class="row">
+				<section id="seccion-1" class="container  p-lg-3 col-9 col-lg-5">
+					<h2 class="definicion titulo-secundario fw-bold">¿Qué es la ciberseguridad?</h2>
+					<p>
+						La ciberseguridad es un conjunto de buenas prácticas utilizadas para proteger los sistemas, las redes, los programas, los datos y los dispositivos de accesos no autorizados que podrían formar parte de ciberataques coordinados y otras amenazas digitales maliciosas contra una empresa. Los tres tipos principales de ciberseguridad son la seguridad de la <strong>red</strong>, la seguridad de la <strong>nube</strong> y la seguridad <strong>física</strong>.
+					</p>
+					<p>
+						Los sistemas operativos y la arquitectura de la red conforman la seguridad de su red. Puede incluir protocolos de red, cortafuegos, puntos de acceso inalámbricos, hosts y servidores. La seguridad en la nube, en cambio, es el cifrado de los datos en la nube en reposo, en movimiento y en uso. Por su parte, la seguridad física se refiere al control del acceso físico a los ordenadores y otros dispositivos.
+					</p>
+				</section>
+				<section id="seccion-2" class="container p-lg-3 col-9 col-lg-5">
+					<h2 class="importancia titulo-secundario fw-bold">¿Por qué es importante?</h2>
+					<p>
+						Descuidar la ciberseguridad puede hacer que su información sensible sea <strong>vulnerable</strong> a todo tipo de ciberataques que podrían no sólo detener las operaciones comerciales, sino también dañar la reputación de la empresa. Otra razón por la que la ciberseguridad es importante es que los clientes de hoy son cada vez más conscientes de los peligros que acechan en el panorama digital actual y esperan que sus datos estén <strong>protegidos</strong> contra los ciberataques.
+					</p>
+				</section>
 			</div>
+			
 		</main>
-		<footer class="footer bg-contraste">
-			<div class="container text-center p-3">
+		<footer class="footer bg-contraste fw-bold">
+			<div class="container text-center p-2">
+				<p class="mt-2">Natalia Devia - 2025</p>
 				<p>&copy; Todos los derechos reservados</p>
 			</div>
 		</footer>
+		
+
+
+
+
     
 
 		<!-- JQuery -->
