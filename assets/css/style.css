@@ -1,3 +1,4 @@
+/* Documento general */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -19,6 +20,15 @@ body {
   color: var(--color-primario);
 }
 
+h1, h2, h3, p {
+  color: var(--color-fuente);
+}
+
+.titulo-secundario {
+  font-size: 1.25rem;
+}
+
+/* Navbar */
 .navbar {
   color: var(--color-primario);
 }
@@ -35,39 +45,6 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, p {
-  color: var(--color-fuente);
-}
-
-.accordion-item p {
-  color: var(--color-primario);
-}
-
-.accordion-body {
-  overflow: hidden;
-}
-
-.robot-ciberseguridad {
-  max-width: 350px;
-}
-
-.titulo-secundario {
-  font-size: 1.25rem;
-}
-
-.color-nav {
-  color: white;
-}
-
-.footer p {
-  color: var(--color-primario);
-}
-
-strong {
-  color: var(--color-secundario);
-}
-
-/* Sobre escritura de las clases de bootstrap */
 .nav-link {
   color: var(--color-fuente);
   font-weight: 400;
@@ -87,9 +64,82 @@ strong {
   color: var(--color-primario);
 }
 
+/* Footer */
+.footer {
+  padding: 2rem 0 1.5rem;
+}
+
+.footer p {
+  color: var(--color-primario);
+}
+
+/* Fuente */
+.titulo-secundario {
+  font-size: 1.5rem;
+}
+
+.fuente h3 {
+  font-size: 1.25rem;
+}
+
+.fuente a {
+  text-decoration: none;
+  color: var(--color-fuente);
+}
+
+.fuente a:hover {
+  color: var(--color-secundario);
+  font-weight: 600;
+}
+
+hr {
+  color: var(--color-fuente);
+}
+
+/* Página introducción */
+.robot-ciberseguridad {
+  max-width: 350px;
+}
+
+strong {
+  color: var(--color-secundario);
+}
+
+/* Página Amenazas */
+.accordion-item p {
+  color: var(--color-primario);
+}
+
+.item1 .accordion-button {
+  background-color: var(--color-secundario);
+}
+
+/* Página Consejos */
+.listado-consejos {
+  color: var(--color-fuente);
+}
+
+ul li ul li {
+  margin-bottom: 0.5rem;
+}
+
+.quiz-intro {
+  color: var(--color-primario);
+}
+
+.form-check-input:checked {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+
 @media screen and (min-width: 768px) {
+  /* Página consejos */
   .item1 {
     height: 350px;
+  }
+
+  .item2 {
+    height: 312px;
   }
 
   .item2-boton {
