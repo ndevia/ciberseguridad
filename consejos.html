@@ -117,7 +117,37 @@
           </ul>
         </div>
       </section>
-      
+          
+      <!-- Sección quiz -->
+      <section class="quiz">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-lg btn-info bg-contraste fw-bold" data-bs-toggle="modal" data-bs-target="#modal-quiz">
+          Responder Quiz
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-quiz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header bg-contraste">
+                <h1 class="modal-title fs-5 d-block" id="staticBackdropLabel">¡Prueba tus conociminetos!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="quiz-intro">Este es un pequeño quiz para comprobar cuánto sabes sobre ciberseguridad./para probar tus conocimentos en ciberseguridad</p>
+                <form id="quiz-form">
+                  <!-- acá se insertarán las preguntas del quiz y sus alternativas de manera dinámica -->
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-info bg-contraste">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
     <div class="fuente ms-3 pb-4">
       <hr>
