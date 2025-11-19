@@ -127,7 +127,7 @@ contactoForm.addEventListener("submit", (event) => {
   datosUsuario.mensaje = mensaje.trim();
   
   // mensaje enviado exitosamente
-  alert("¡Tu mensaje ha sido enviado exitosamente! Pronto te contactaremos.");
+  alert(`¡Tu mensaje ha sido enviado exitosamente, ${datosUsuario.nombre}! Pronto te contactaremos.`);
   contactoForm.reset();
 });
 

@@ -3,347 +3,351 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/cybersecurity-padlock.png" type="image/x-icon">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-  <title>Amenazas Comunes</title>
+    <title>Amenazas Comunes</title>
   </head>
   <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg bg-contraste">
-      <div class="container px-5">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/cybersecurity-padlock.png" alt="imagen de candado"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="amenazas.html">Amenazas Comunes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
-            </li>
-          </ul>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-contraste">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/cybersecurity-padlock.png" alt="imagen de candado"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="amenazas.html">Amenazas Comunes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center">
+        <h1 class="mt-5">Amenazas Comunes</h1>
+      </div>
+    </header>
+    <main class="main container pb-4 text-light">
+      <div class="container">
+        <div class="row py-5">
+          <!-- Accordion 1 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion1">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Denegación de servicio distribuida (DDoS)
+                </button>
+              </h2>
+              <div id="accordion1-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    El objetivo de un DDoS es colapsar el servidor, el sitio web o la red de destino sobrecargándolo de tráfico.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir los DDoS
+                </button>
+              </h2>
+              <div id="accordion1-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>
+                      Implantar protocolos de seguridad de red, como cortafuegos y redes privadas virtuales (VPN).
+                    </li>
+                    <li>Abordar las lagunas o vacíos de su ciberseguridad.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion2">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Ingeniería social
+                </button>
+              </h2>
+              <div id="accordion2-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    La ingeniería social es el uso de la manipulación y el engaño para obtener acceso no autorizado a sistemas e información. Explota el factor humano de la ciberseguridad.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir la ingeniería social
+                </button>
+              </h2>
+              <div id="accordion2-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>Formar a los empleados para que sean emocionalmente inteligentes y perceptivos.</li>
+                    <li>
+                      Disponer de procedimientos sólidos de autenticación para el acceso a los sistemas de la empresa. 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion3">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Phishing
+                </button>
+              </h2>
+              <div id="accordion3-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    El tipo más común de ingeniería social, consiste en enviar mensajes falsos a personas de la empresa, con el objetivo que el destinatario divulgue información privada o haga clic en un enlace que permita que el malware acceda a sus cuentas o infecte su sistema informático.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir el phishing
+                </button>
+              </h2>
+              <div id="accordion3-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>Exigir el uso de correos electrónicos corporativos y filtros de spam.</li>
+                    <li>
+                      Educar a los empleados sobre el aspecto que pueden tener los mensajes falsos de personas clave de la organización.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion4">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Hombre en el medio (MITM)
+                </button>
+              </h2>
+              <div id="accordion4-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Los ataques Man-in-the-middle tienen lugar cuando el hacker es capaz de introducirse en un proceso de transmisión de información, como un dispositivo que se conecta a una red o un usuario que se registra en una cuenta.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir el MITM
+                </button>
+              </h2>
+              <div id="accordion4-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>No conectarse a redes Wi-Fi públicas o que no requieran datos de acceso.</li>
+                    <li>Visitar sólo sitios web con el protocolo HTTPS.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 5 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion5">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Ataque de contraseña
+                </button>
+              </h2>
+              <div id="accordion5-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Un ataque de contraseña es básicamente cualquier intento de obtener la contraseña de alguien sin su consentimiento.
+                  </p>
+                  <p>
+                    Esto se puede lograr espiando físicamente a alguien mientras introduce su contraseña, adivinar utilizando información disponible públicamente, mediante keyloggers y otros programas espía, entre otros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-botond-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir el ataque de contraseña
+                </button>
+              </h2>
+              <div id="accordion5-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>No utilizar nunca la misma contraseña o variaciones de ésta para varias cuentas.</li>
+                    <li>
+                      Utilizar contraseñas únicas y fuertes, que no estén relacionadas con datos que se encuentren de manera pública en las redes sociales.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 6 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion6">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Inyección SQL
+                </button>
+              </h2>
+              <div id="accordion6-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Una inyección de lenguaje de consulta estructurado (SQL) consiste en añadir código malicioso a un servidor utilizando SQL, pudiendo forzar al servidor a liberar información sensible.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir la inyección SQL
+                </button>
+              </h2>
+              <div id="accordion6-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>
+                      Resolver las vulnerabilidades SQL con la ayuda de su webmaster o de un especialista en informática.
+                    </li>
+                    <li>
+                      Utilizar la validación de entradas, las consultas parametrizadas o las sentencias preparadas, y los cortafuegos de aplicaciones web.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accordion 7 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion5">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Malware
+                </button>
+              </h2>
+              <div id="accordion7-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    El malware es un software de ciberataque, diseñado específicamente para ayudar al hacker o grupo de hackers a obtener un acceso no autorizado. 
+                  </p>
+                  <p>
+                    Algunos tipos de malware son: Ransomware, Software de redes de bots, Troyanos, Troyanos de acceso remoto (RATs), Virus y gusanos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir el malware
+                </button>
+              </h2>
+              <div id="accordion7-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>Instalar un software antivirus y configurarlo para analizar automáticamente los sistemas.</li>
+                    <li>
+                      Añadir varias capas de protección para dificultar al máximo el acceso de los piratas informáticos a los activos digitales (cambiar las contraseñas con frecuencia, exigir una autenticación adicional).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Accordion 8 -->
+          <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion6">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Ransomware
+                </button>
+              </h2>
+              <div id="accordion8-parte1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    El ransomware es un tipo de malware que impide a los propietarios acceder a sus propios sistemas informáticos y archivos. Puede incluir amenazas de borrar datos o hacerlos públicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Formas de prevenir el ransomeware
+                </button>
+              </h2>
+              <div id="accordion8-parte2" class="accordion-collapse collapse">
+                <div class="accordion-body item2">
+                  <ul>
+                    <li>
+                      Instalar un software antivirus y configurarlo para analizar automáticamente los sistemas.
+                    </li>
+                    <li>Cambiar las contraseñas con frecuencia.</li>
+                    <li>Exigir una autenticación adicional.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <div class="container text-center">
-      <h1 class="mt-5">Amenazas Comunes</h1>
-    </div>
-  </header>
-  <main class="main container pb-4 text-light">
-    <div class="container">
-      <div class="row py-5">
-         <!-- Accordion 1 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion1">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Denegación de servicio distribuida (DDoS)
-              </button>
-            </h2>
-            <div id="accordion1-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  El objetivo de un DDoS es colapsar el servidor, el sitio web o la red de destino sobrecargándolo de tráfico.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir los DDoS
-              </button>
-            </h2>
-            <div id="accordion1-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>
-                    Implantar protocolos de seguridad de red, como cortafuegos y redes privadas virtuales (VPN).
-                  </li>
-                  <li>Abordar las lagunas o vacíos de su ciberseguridad.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion 2 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion2">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Ingeniería social
-              </button>
-            </h2>
-            <div id="accordion2-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  La ingeniería social es el uso de la manipulación y el engaño para obtener acceso no autorizado a sistemas e información. Explota el factor humano de la ciberseguridad.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir la ingeniería social
-              </button>
-            </h2>
-            <div id="accordion2-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>Formar a los empleados para que sean emocionalmente inteligentes y perceptivos.</li>
-                  <li>
-                    Disponer de procedimientos sólidos de autenticación para el acceso a los sistemas de la empresa. 
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion 3 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion3">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Phishing
-              </button>
-            </h2>
-            <div id="accordion3-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  El tipo más común de ingeniería social, consiste en enviar mensajes falsos a personas de la empresa, con el objetivo que el destinatario divulgue información privada o haga clic en un enlace que permita que el malware acceda a sus cuentas o infecte su sistema informático.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir el phishing
-              </button>
-            </h2>
-            <div id="accordion3-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>Exigir el uso de correos electrónicos corporativos y filtros de spam.</li>
-                  <li>
-                    Educar a los empleados sobre el aspecto que pueden tener los mensajes falsos de personas clave de la organización.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion 4 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion4">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Hombre en el medio (MITM)
-              </button>
-            </h2>
-            <div id="accordion4-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  Los ataques Man-in-the-middle tienen lugar cuando el hacker es capaz de introducirse en un proceso de transmisión de información, como un dispositivo que se conecta a una red o un usuario que se registra en una cuenta.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir el MITM
-              </button>
-            </h2>
-            <div id="accordion4-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>No conectarse a redes Wi-Fi públicas o que no requieran datos de acceso.</li>
-                  <li>Visitar sólo sitios web con el protocolo HTTPS.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion 5 -->
-         <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion5">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Ataque de contraseña
-              </button>
-            </h2>
-            <div id="accordion5-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  Un ataque de contraseña es básicamente cualquier intento de obtener la contraseña de alguien sin su consentimiento.
-                </p>
-                <p>
-                  Esto se puede lograr espiando físicamente a alguien mientras introduce su contraseña, adivinar utilizando información disponible públicamente, mediante keyloggers y otros programas espía, entre otros.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-botond-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir el ataque de contraseña
-              </button>
-            </h2>
-            <div id="accordion5-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>No utilizar nunca la misma contraseña o variaciones de ésta para varias cuentas.</li>
-                  <li>
-                    Utilizar contraseñas únicas y fuertes, que no estén relacionadas con datos que se encuentren de manera pública en las redes sociales.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion 6 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion6">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Inyección SQL
-              </button>
-            </h2>
-            <div id="accordion6-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  Una inyección de lenguaje de consulta estructurado (SQL) consiste en añadir código malicioso a un servidor utilizando SQL, pudiendo forzar al servidor a liberar información sensible.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion6-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir la inyección SQL
-              </button>
-            </h2>
-            <div id="accordion6-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>
-                    Resolver las vulnerabilidades SQL con la ayuda de su webmaster o de un especialista en informática.
-                  </li>
-                  <li>
-                    Utilizar la validación de entradas, las consultas parametrizadas o las sentencias preparadas, y los cortafuegos de aplicaciones web.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-         
-        <!-- Accordion 7 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion5">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Malware
-              </button>
-            </h2>
-            <div id="accordion7-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  El malware es un software de ciberataque, diseñado específicamente para ayudar al hacker o grupo de hackers a obtener un acceso no autorizado. 
-                </p>
-                <p>
-                  Algunos tipos de malware son: Ransomware, Software de redes de bots, Troyanos, Troyanos de acceso remoto (RATs), Virus y gusanos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion7-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir el malware
-              </button>
-            </h2>
-            <div id="accordion7-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>Instalar un software antivirus y configurarlo para analizar automáticamente los sistemas.</li>
-                  <li>
-                    Añadir varias capas de protección para dificultar al máximo el acceso de los piratas informáticos a los activos digitales (cambiar las contraseñas con frecuencia, exigir una autenticación adicional).
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Accordion 8 -->
-        <div class="accordion col-9 col-md-6 col-lg-3 mb-3 mx-auto" id="accordion6">
-          <div class="accordion-item item1">
-            <h2 class="accordion-header">
-              <button class="accordion-button fw-bold d-inline-flex focus-ring focus-ring-info" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8-parte1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Ransomware
-              </button>
-            </h2>
-            <div id="accordion8-parte1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <p>
-                  El ransomware es un tipo de malware que impide a los propietarios acceder a sus propios sistemas informáticos y archivos. Puede incluir amenazas de borrar datos o hacerlos públicos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-bold item2-boton d-inline-flex focus-ring focus-ring-info bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#accordion8-parte2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Formas de prevenir el ransomeware
-              </button>
-            </h2>
-            <div id="accordion8-parte2" class="accordion-collapse collapse">
-              <div class="accordion-body item2">
-                <ul>
-                  <li>
-                    Instalar un software antivirus y configurarlo para analizar automáticamente los sistemas.
-                  </li>
-                  <li>Cambiar las contraseñas con frecuencia.</li>
-                  <li>Exigir una autenticación adicional.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="fuente ms-3 pb-4">
+        <hr>
+        <h3 class="pt-3">Fuente:</h3>
+        <a href="https://safetyculture.com/es/temas/ciberseguridad/" target="_blank">SafetyCulture - La ciberseguridad explicada: Una guía sencilla</a>
       </div>
-    </div>
-    <div class="fuente ms-3 pb-4">
-      <hr>
-      <h3 class="pt-3">Fuente:</h3>
-      <a href="https://safetyculture.com/es/temas/ciberseguridad/" target="_blank">SafetyCulture - La ciberseguridad explicada: Una guía sencilla</a>
-    </div>
-  </main>
-  <footer class="footer bg-contraste fw-bold">
-    <div class="container text-center p-2">
-      <p class="mt-2">Natalia Devia - 2025</p>
-      <p>&copy; Todos los derechos reservados</p>
-    </div>
-  </footer>
+    </main>
+    <footer class="footer bg-contraste fw-bold">
+      <div class="container text-center p-2">
+        <p class="mt-2">Natalia Devia - 2025</p>
+        <p>&copy; Todos los derechos reservados</p>
+      </div>
+    </footer>
 
-  <!-- JQuery -->
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 		<!-- Bootstrp -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
 		<script src="assets/js/script.js"></script>
   </body>
 </html>
