@@ -1,4 +1,5 @@
 const quizForm = document.getElementById("quiz-form");
+const contactoForm = document.getElementById("contacto-form");
 
 // creación de preguntas y opciones de manera dinámica
 let contadorPreguntas = 1;
@@ -43,6 +44,7 @@ preguntasQuiz.forEach(pregunta => {
     div.appendChild(label);
     quizForm.appendChild(div);
   });
+
   contadorPreguntas += 1;
 });
 
@@ -95,3 +97,37 @@ botonEnviar.addEventListener("click", (event) => {
   let resultado = `Respondiste ${respuestasAcertadas}/${totalPreguntas} preguntas correctamente.`;
   alert(`${resultado} ${mensajeFinal}`);
 });
+
+// obtener datos del usuario del formulario de contacto
+const datosUsuario = {};
+const botonContacto = document.querySelector(".boton-contacto");
+
+contactoForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // validar que se ingresó nombre o asignar como "Ánonimo si el usuario prefiere no compartirlo"
+  const nombre = document.getElementById("nombre").value;
+  if (!nombre) {
+    datosUsuario.nombre = "Anónimo";
+  } else {
+    datosUsuario.nombre = nombre.trim();
+  }
+  // validar que se ingresó email
+  const email = document.getElementById("email").value;
+  if (!email) {
+    alert("Por favor escribe tu correo electrónico antes de enviar.");
+    return;
+  }
+  datosUsuario.email = email.trim();
+  // validar que se ingresó mensaje
+  const mensaje = document.getElementById("mensaje").value;
+  if (!mensaje) {
+    alert("No olvides escribir tu comentario 😉");
+    return;
+  }
+  datosUsuario.mensaje = mensaje.trim();
+  
+  // mensaje enviado exitosamente
+  alert("¡Tu mensaje ha sido enviado exitosamente! Pronto te contactaremos.");
+  contactoForm.reset();
+});
+

@@ -147,6 +147,29 @@
           </div>
         </div>
       </section>
+
+      <!-- Sección formulario contacto -->
+      <section class="formulario text-center">
+        <h2 class="fw-bold my-5">Contacto</h2>
+        <p>¿Tienes alguna duda o sugerencia?</p>
+        <p>Por favor no dudes en contactarnos.</p>
+        <!-- formulario con novalidate para evitar mensajes de validación del navegador -->
+        <form id="contacto-form" class="text-light my-5 col-12 col-md-10 col-lg-8 mx-auto py-5 px-4 px-md-5 bg-contraste rounded my-5" novalidate>
+          <div class="mb-4">
+            <label for="nombre" class="form-label fw-bold fs-5 mb-3">Nombre</label>
+            <input type="text" id="nombre" class="form-control d-inline-flex focus-ring focus-ring-light" placeholder="Por favor escribe tu nombre">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label fw-bold fs-5 mb-3">Email</label>
+            <input type="email" id="email" class="form-control d-inline-flex focus-ring focus-ring-light" placeholder="Por favor escribe tu correo electrónico" required>
+          </div>
+          <div class="mb-4">
+            <label for="mensaje" class="form-label fw-bold fs-5 mb-3">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="form-control d-inline-flex focus-ring focus-ring-light" placeholder="Deja aquí tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark mt-4 boton-contacto py-2 fw-bold col-12">Enviar</button>
+        </form>
+      </section>
       
     </div>
     <div class="fuente ms-3 pb-4">
