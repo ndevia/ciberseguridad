@@ -127,6 +127,14 @@ ul li ul li {
   color: var(--color-primario);
 }
 
+#boton-modal {
+  color: var(--color-primario);
+}
+
+.modal-content, .modal-title {
+  color: var(--color-primario)
+}
+
 .form-check-input:checked {
   background-color: var(--color-secundario);
   border-color: var(--color-secundario);
